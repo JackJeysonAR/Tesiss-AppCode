@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Transporte Inclusivo</string>
+    <string name="search_hint">Buscar transporte...</string>
+    <string name="wheelchair_option">Silla de ruedas</string>
+    <string name="elevator_option">Ascensor</string>
+    <!-- Onboarding GPS -->
+    <string name="use_current_location">Usar ubicación actual</string>
+    <string name="manual_location">Ubicación manual</string>
+    <string name="track_your_trip">Sigue tu viaje</string>
+    <string name="track_trip_description">Conozca a su conductor y podrá ver la ubicación actual en tiempo real en el mapa</string>
+    <string name="greeting_title">¡Hola, un placer conocerte!</string>
+    <string name="greeting_subtitle">Elige tu ubicación para encontrar una ruta accesible</string>
+</resources>

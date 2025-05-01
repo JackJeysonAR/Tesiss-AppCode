@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Barra de búsqueda -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Buscar transporte..." />
+
+    <!-- Filtros (CheckBox para discapacidad) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <CheckBox
+            android:id="@+id/cbWheelchair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silla de ruedas" />
+
+        <CheckBox
+            android:id="@+id/cbElevator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ascensor" />
+
+    </LinearLayout>
+
+    <!-- Lista de transportes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTransport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
