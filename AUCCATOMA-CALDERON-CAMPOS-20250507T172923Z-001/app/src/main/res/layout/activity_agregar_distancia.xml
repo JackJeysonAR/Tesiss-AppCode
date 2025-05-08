@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AgregarDistanciaActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp"
+        android:layout_columnSpan="2"/>
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:columnCount="2"
+        android:rowCount="7">
+
+
+
+
+      <!-- Lugar A -->
+      <TextView
+          android:text="Lugar A:"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"/>
+
+      <EditText
+          android:id="@+id/edtLugarA"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="15dp"/>
+
+      <!-- Latitud A -->
+      <TextView
+          android:text="Latitud A:"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:paddingTop="15dp"/>
+
+      <EditText
+          android:id="@+id/edtLatitudA"
+          android:inputType="numberDecimal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="15dp"/>
+
+      <!-- Longitud A -->
+      <TextView
+          android:text="Longitud A:"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:paddingTop="15dp"/>
+
+      <EditText
+          android:id="@+id/edtLongitudA"
+          android:inputType="numberDecimal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="15dp"/>
+
+      <!-- Lugar B -->
+      <TextView
+          android:text="Lugar B:"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:paddingTop="15dp"/>
+
+      <EditText
+          android:id="@+id/edtLugarB"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="15dp"/>
+
+      <!-- Latitud B -->
+      <TextView
+          android:text="Latitud B:"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"/>
+
+      <EditText
+          android:id="@+id/edtLatitudB"
+          android:inputType="numberDecimal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="15dp"/>
+
+      <!-- Longitud B -->
+      <TextView
+          android:text="Longitud B:"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"/>
+
+      <EditText
+          android:id="@+id/edtLongitudB"
+          android:inputType="numberDecimal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="15dp"/>
+
+      <!-- Distancia -->
+      <TextView
+          android:text="Distancia:"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"/>
+
+      <EditText
+          android:id="@+id/edtDistancia"
+          android:inputType="numberDecimal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="15dp"/>
+
+      <!-- Botón (ocupará dos columnas) -->
+      <Button
+          android:id="@+id/btnGuardar"
+          android:text="Guardar Datos"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_columnSpan="2"
+          android:layout_marginTop="30dp"/>
+
+    </GridLayout>
+  </LinearLayout>
+</ScrollView>

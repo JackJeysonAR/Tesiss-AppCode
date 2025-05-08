@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_nombre_ciudad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Nombre Ciudad"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/btn_mapa_ciudad"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Ir a mapa"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/btn_detalle_ciudad"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Detalles" />
+</LinearLayout>

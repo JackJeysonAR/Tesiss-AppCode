@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "533340148346",
+    "project_id": "calderoncordovapongopa3",
+    "storage_bucket": "calderoncordovapongopa3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533340148346:android:c1f82cb00069a0bb2321c3",
+        "android_client_info": {
+          "package_name": "calderon.cordova.pongo.pa3.org"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXw3ZxxDzOIxWM7wOHSGM0sqMi-UqCjUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

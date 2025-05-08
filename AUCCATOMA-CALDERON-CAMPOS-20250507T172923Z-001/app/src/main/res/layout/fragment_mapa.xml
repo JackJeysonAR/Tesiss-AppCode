@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapa_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mapa.MapaFragment">
+
+    <!-- Mapa -->
+
+    <!-- Botón para expandir/retraer lista -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapa"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/mapa_tipo_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@android:color/transparent">
+
+        <Button
+            android:id="@+id/btn_toggle_tipo_mapa"
+            android:layout_width="135dp"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_toggle_menu" />
+
+        <LinearLayout
+            android:id="@+id/mapa_tipo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="#AAFFFFFF"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/btn_normal"
+                android:layout_width="110dp"
+                android:textAlignment="textStart"
+                android:backgroundTint="#4D4B4B"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_normal" />
+
+            <Button
+                android:id="@+id/btn_satelite"
+                android:layout_width="110dp"
+                android:textAlignment="textStart"
+                android:backgroundTint="#4D4B4B"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_satelite" />
+
+            <Button
+                android:id="@+id/btn_hibrido"
+                android:layout_width="110dp"
+                android:textAlignment="textStart"
+                android:backgroundTint="#4D4B4B"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_hibrido" />
+
+            <Button
+                android:id="@+id/btn_terreno"
+                android:layout_width="110dp"
+                android:textAlignment="textStart"
+                android:backgroundTint="#4D4B4B"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_terreno" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_toggle_distancia"
+            android:layout_width="135dp"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_toggle_distancia" />
+
+        <LinearLayout
+            android:id="@+id/distancia_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="#AAFFFFFF"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/btn_distancia_entre_marcador"
+                android:layout_width="290dp"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D4B4B"
+                android:text="@string/btn_distancia_entre_marcador" />
+
+            <Button
+                android:id="@+id/btn_distancia_ubicacion_actual"
+                android:layout_width="290dp"
+                android:textAlignment="textStart"
+                android:backgroundTint="#4D4B4B"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_distancia_ubicacion_actual" />
+            <Button
+                android:id="@+id/btn_guardar_distancia"
+                android:layout_width="290dp"
+                android:textAlignment="textStart"
+                android:backgroundTint="#4D4B4B"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_guardar_distancia" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
